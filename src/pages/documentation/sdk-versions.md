@@ -97,7 +97,7 @@ For React Native, we recommend that you first install [Node.js](https://nodejs.o
 
 <InlineAlert variant="info" slots="text"/>
 
-Beta versions of React Native Experience Platform Edge Network, Edge Identity, Edge Consent, Messaging and Assurance can be found in the repository link [here](https://github.com/adobe/aepsdk-react-native). These new beta extensions require the latest AEP Core to opperate. See [README](https://github.com/adobe/aepsdk-react-native/blob/main/README.md) for further information on installation and configuration.
+React Native Experience Platform Edge Network, Edge Identity, Edge Consent, Optimize, Places, Target, Campaign Classic and Assurance can be found in the repository link [here](https://github.com/adobe/aepsdk-react-native). These new extensions require the latest AEP Core to operate. See [README](https://github.com/adobe/aepsdk-react-native/blob/main/README.md) for further information on installation and configuration.
 
 ## Flutter
 
@@ -105,7 +105,7 @@ Adobe Experience Platform Mobile SDK plugin for Flutter supports Flutter **versi
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Mobile SDK plugins for Flutter are compatible only with [iOS — Objective-C](#ios-objective-c) libraries, at this time.
+Adobe Experience Platform Mobile SDK plugins for Flutter (ACP 2.x) are compatible only with [iOS — Objective-C](#ios-objective-c) libraries, at this time.
 
 | Extension | pub.dev | Github | Sample App |
 |---|---|---|---|

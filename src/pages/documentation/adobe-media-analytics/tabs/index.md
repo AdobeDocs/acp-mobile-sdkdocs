@@ -1,4 +1,4 @@
-<Variant platform="android" task="add" repeat="9"/>
+<Variant platform="android" task="add" repeat="6"/>
 
 The latest Android SDK versions:
 
@@ -18,15 +18,9 @@ You can also manually include the libraries. Get `.aar` libraries from [Github](
 import com.adobe.marketing.mobile.*;
 ```
 
-<Variant platform="ios" task="add" repeat="12"/>
+<Variant platform="ios" task="add" repeat="9"/>
 
 The latest iOS SDK versions:
-
-[<img src="https://img.shields.io/cocoapods/v/AEPCore.svg?color=orange&label=ACPCore&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/ACPCore)
-
-[<img src="https://img.shields.io/cocoapods/v/AEPAnalytics.svg?color=orange&label=ACPAnalytics&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/ACPAnalytics)
-
-[<img src="https://img.shields.io/cocoapods/v/AEPMedia.svg?color=orange&label=ACPMedia&logo=apple&logoColor=white&style=flat-square" alt="Cocoapods" style="width:150px"/>](https://cocoapods.org/pods/ACPMedia)
 
 1. To add the Media library and its dependencies to your project, add the following pods to your `Podfile`:
 
@@ -52,17 +46,11 @@ import ACPMedia
 #import "ACPMedia.h"
 ```
 
-<Variant platform="react-native" task="add" repeat="18"/>
+<Variant platform="react-native" task="add" repeat="12"/>
 
 #### JavaScript
 
 The latest React Native Wrapper versions:
-
-[<img src="https://img.shields.io/npm/v/@adobe/react-native-acpcore.svg?color=green&label=%40adobe%2Freact-native-acpcore&logo=npm&style=flat-square" alt="npm version" style="width:250px"/>](https://www.npmjs.com/package/@adobe/react-native-acpcore)
-
-[<img src="https://img.shields.io/npm/v/@adobe/react-native-acpanalytics.svg?color=green&label=%40adobe%2Freact-native-acpanalytics&logo=npm&style=flat-square" alt="npm version" style="width:250px"/>](https://www.npmjs.com/package/@adobe/react-native-acpanalytics)
-
-[<img src="https://img.shields.io/npm/v/@adobe/react-native-acpmedia.svg?color=green&label=%40adobe%2Freact-native-acpmedia&logo=npm&style=flat-square" alt="npm version" style="width:250px"/>](https://www.npmjs.com/package/@adobe/react-native-acpmedia)
 
 1. Install Media.
 

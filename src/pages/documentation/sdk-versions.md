@@ -105,7 +105,7 @@ Adobe Experience Platform Mobile SDK plugin for Flutter supports Flutter **versi
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Experience Platform Mobile SDK plugins for Flutter (ACP 2.x) are compatible only with [iOS — Objective-C](#ios-objective-c) libraries, at this time.
+Adobe Experience Platform Mobile SDK plugins for Flutter are compatible only with [iOS — Objective-C](#ios-objective-c) libraries, at this time.
 
 | Extension | pub.dev | Github | Sample App |
 |---|---|---|---|

@@ -1,6 +1,4 @@
-<Variant platform="android" task="add" repeat="6"/>
-
-The latest Android SDK versions:
+<Variant platform="android" task="add" repeat="5"/>
 
 1. Add the Media extension and its dependencies to your project using the app's Gradle file.
 
@@ -18,9 +16,7 @@ You can also manually include the libraries. Get `.aar` libraries from [Github](
 import com.adobe.marketing.mobile.*;
 ```
 
-<Variant platform="ios" task="add" repeat="9"/>
-
-The latest iOS SDK versions:
+<Variant platform="ios" task="add" repeat="8"/>
 
 1. To add the Media library and its dependencies to your project, add the following pods to your `Podfile`:
 
@@ -46,11 +42,9 @@ import ACPMedia
 #import "ACPMedia.h"
 ```
 
-<Variant platform="react-native" task="add" repeat="12"/>
+<Variant platform="react-native" task="add" repeat="11"/>
 
 #### JavaScript
-
-The latest React Native Wrapper versions:
 
 1. Install Media.
 

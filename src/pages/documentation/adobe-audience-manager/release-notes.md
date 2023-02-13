@@ -21,6 +21,11 @@
 * Added support for AdobeCallbackWithError for APIs getVisitorProfile, signalWithData.
 * Added changes to publish Audience shared state on EventHub boot.
 
+### iOS Audience 2.1.0
+* Added new APIs getVisitorProfileWithCompletionHandler, signalWithData:WithCompletionHandler. These APIs take completion handler as an argument which is invoked with the desirable response or an NSError if an unexpected error occurs or the request times out.
+* Added changes to publish Audience shared state on EventHub boot.
+* Fixed an issue to handle Analytics response only if AAMForwarding is enabled.
+
 ## July 17, 2020
 
 ### @adobe/react-native-acpaudience@1.1.2

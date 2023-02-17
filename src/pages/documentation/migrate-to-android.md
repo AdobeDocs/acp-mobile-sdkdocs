@@ -81,7 +81,7 @@ Some of the APIs available in previous major versions of the Mobile SDK for Andr
 
 <InlineAlert variant="info" slots="text"/>
 
-The `registerExtension` API for each extension is deprated in the latest mobile SDK. You don't need to register extensions seperately, now you can call `MobileCore.registerExtensions` instead. See [Update SDK initialization](#update-sdk-initialization) section for more details.
+The `registerExtension` API for each extension is deprated in the latest mobile SDK. You don't need to register extensions seperately, now you can call `MobileCore.registerExtensions` instead. See the [Update SDK initialization](#update-sdk-initialization) section for more details.
 
 | Deprecated API                    | Alternative API                    |
 | :-------------------------------- | :--------------------------------- |

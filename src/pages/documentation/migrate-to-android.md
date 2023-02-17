@@ -79,11 +79,12 @@ Kotlin
 
 Some of the APIs available in previous major versions of the Mobile SDK for Android are now deprecated. You can choose to replace the deprecated APIs in your code with the alternative APIs in the latest version, as described in the table below:
 
+<InlineAlert variant="info" slots="text"/>
+
+The `registerExtension` API for each extension is deprated in the latest mobile SDK. You don't need to register extensions seperately, now you can call `MobileCore.registerExtensions` instead. See [Update SDK initialization](#update-sdk-initialization) section for more details.
+
 | Deprecated API                    | Alternative API                    |
 | :-------------------------------- | :--------------------------------- |
-| `Identity.registerExtension`      | `MobileCore.registerExtensions`    |
-| `Signal.registerExtension`        | `MobileCore.registerExtensions`    |
-| `Lifecycle.registerExtension`     | `MobileCore.registerExtensions`    |
-| `UserProfile.registerExtension`   | `MobileCore.registerExtensions`    |
+| `EXTENSION.registerExtension`     | `MobileCore.registerExtensions`    |
 | `UserProfile.updateUserAttribute` | `UserProfile.updateUserAttributes` |
 | `UserProfile.removeUserAttribute` | `UserProfile.removeUserAttributes` |

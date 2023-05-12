@@ -10,17 +10,17 @@
  * governing permissions and limitations under the License.
  */
 module.exports = {
-    pathPrefix: process.env.PATH_PREFIX || '/client-sdks/previous-versions/',
+    pathPrefix: process.env.PATH_PREFIX || '/client-sdkstest/previous-versions/',
     siteMetadata: {
         versions: [
             {
                 title: 'Latest version',
-                path: '/client-sdks/documentation',
+                path: '/client-sdkstest/documentation',
 
               },
               {
                 title: 'Previous versions',
-                path: '/client-sdks/previous-versions/documentation',
+                path: '/client-sdkstest/previous-versions/documentation',
                 selected: true
               }
           ],

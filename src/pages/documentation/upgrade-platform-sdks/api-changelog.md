@@ -119,7 +119,7 @@ For more information, see [Audience Manager Extension API Reference](https://dev
 
 ## Adobe Target extension APIs
 
-For more information see [Target API reference](../adobe-target/api-reference.md).
+For more information see [Target API reference](https://developer.adobe.com/client-sdks/documentation/adobe-target/api-reference/).
 
 ### Supported APIs
 

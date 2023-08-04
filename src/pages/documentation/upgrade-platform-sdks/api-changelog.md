@@ -29,7 +29,7 @@ For more information, see [Mobile Core API reference](https://developer.adobe.co
 |---|---|
 | trackActionFromBackground | Deprecated |
 | trackLocation:data: | Deprecated |
-| trackBeacon:Data: | Support modified. See [Analytics extension](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
+| trackBeacon:Data: | Support modified. See [guide](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/track-beacon/) |
 | trackingClearCurrentBeacon | Deprecated |
 | registerAdobeDataCallback: | Deprecated |
 | lifetimeValue | Deprecated |

@@ -49,23 +49,26 @@ If you are using Gradle to manage your app dependencies, the following example s
 
 ```java
 dependencies {
-    //replace sdk-core with Core/Lifecycle/Identity/Signal 2.0
-    //implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
-    implementation 'com.adobe.marketing.mobile:core:2.+'
-    implementation 'com.adobe.marketing.mobile:lifecycle:2.+'
-    implementation 'com.adobe.marketing.mobile:identity:2.+'
-    implementation 'com.adobe.marketing.mobile:signal:2.+'
+    // The latest SDKs use bom to mange extension versions
+    // 1. Replace sdk-core with Core/Lifecycle/Identity/Signal
 
-    //replace UserProfile 1.+ with UserProfile 2.0
-    //implementation 'com.adobe.marketing.mobile:userprofile:1.+'
-    implementation 'com.adobe.marketing.mobile:userprofile:2.+'
+    // implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
+    implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
+    implementation 'com.adobe.marketing.mobile:core'
+    implementation 'com.adobe.marketing.mobile:identity'
+    implementation 'com.adobe.marketing.mobile:signal'
+    implementation 'com.adobe.marketing.mobile:lifecycle'
 
+    // 2. Replace other extension artifacts as below
+    
+    // implementation 'com.adobe.marketing.mobile:userprofile:1.+'
+    implementation 'com.adobe.marketing.mobile:userprofile'
 }
 ```
 
 <InlineAlert variant="warning" slots="text"/>
 
-Using dynamic dependency versions is not recommended for production apps. Refer to this [page](https://developer.adobe.com/client-sdks/documentation/manage-gradle-dependencies) for managing Gradle dependencies.
+Using dynamic dependency versions is not recommended for production apps. Refer to this [page](https://developer.adobe.com/client-sdks/resources/manage-gradle-dependencies/) for managing Gradle dependencies.
 
 Save the `build.gradle` file and select `Sync Project with Gradle Files` in Android Studio to download the latest Android SDK.
 
@@ -98,3 +101,13 @@ The `registerExtension` API for each extension is deprecated in the latest versi
 | `EXTENSION.registerExtension` | `MobileCore.registerExtensions` |
 | `UserProfile.updateUserAttribute` | `UserProfile.updateUserAttributes` |
 | `UserProfile.removeUserAttribute` | `UserProfile.removeUserAttributes` |
+
+## (Optional) Update the implementation of the network override
+
+Start from the SDK version 2.0, there have been breaking changes to overriding the default network service. The following classes have been removed in the latest SDKs. The implemetnation code working for overriding network service with the 1.x SDK  should be updated refering to this [documentation](https://developer.adobe.com/client-sdks/home/base/mobile-core/platform-services/network-service/).
+
+| Deprecated classes |
+| :------------- |
+| `AndroidNetworkServiceOverrider` |
+| `AndroidNetworkServiceOverrider.HTTPConnectionPerformer` |
+| `AndroidNetworkServiceOverrider.Connecting` |

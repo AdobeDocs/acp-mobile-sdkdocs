@@ -43,14 +43,16 @@ If you are manually importing SDK libraries, ensure you identify all currently u
 If you are using CocoaPods to manage your Adobe Experience Platform Mobile SDK dependencies, the following example shows you how to switch ACP-prefix libraries to AEP-prefix libraries in your `Podfile`.
 
 ```ruby
-# replace ACPCore with AEPCore/AEPLifecycle/AEPIdentity/AEPSignal
+# 1. Replace ACPCore with AEPCore/AEPLifecycle/AEPIdentity/AEPSignal
+
 # pod 'ACPCore'
   pod 'AEPCore'
   pod 'AEPLifecycle'
   pod 'AEPIdentity'
   pod 'AEPSignal'
 
-# replace ACPUserProfile with AEPUserProfile
+# 2. Replace other extension pods as below
+
 # pod 'ACPUserProfile'
   pod 'AEPUserProfile'
 ```
@@ -98,3 +100,13 @@ Finally, you'll need to scan through your current implementation and replace ACP
 | [Adobe Experience Platform Target](./adobe-target/index.md) | [AEPTarget](./adobe-target/migration.md) |
 | [Adobe Experience Platform Campaign](./adobe-campaign-standard/index.md) | [AEPCampaign](./adobe-campaign-standard/migration.md) |
 | [Adobe Experience Platform Campaign Classic](./adobe-campaign-classic/index.md) | [AEPCampaignClassic](./adobe-campaign-classic/migration.md) |
+
+## (Optional) Update the implementation of the network override
+
+In AEP-prefix SDK libraries, there have been breaking changes to overriding the default network service. The following interfaces have been removed in the latest SDKs. The implemetnation code working for overriding network service with the ACP-prefix SDK  should be updated refering to this [documentation](https://developer.adobe.com/client-sdks/home/base/mobile-core/platform-services/network-service/).
+
+| Deprecated interfaces |
+| :------------- |
+| `ACPNetworkServiceOverrider` |
+| `ACPHttpConnectionPerformer` |
+| `ACPHttpConnection` |
